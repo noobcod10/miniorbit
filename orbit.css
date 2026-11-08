@@ -1,18 +1,21 @@
  .loader{
     z-index: 9;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     width: 100vw;
     height: 100vh;
     background-color: #22242a;
-    animation: fadeout 0.2s ease-in-out 3s forwards;
+    animation: fadeout 0.15s ease-in-out 3s forwards;
   }
   .load{
         z-index: 10;
         border-radius: 50%;
-        margin: 30% auto;
-        width: 2em;
-        height: 2em;
+       
+        width:clamp(1em, 4%, 2.5em );
+        aspect-ratio: 1/1;
         border: 5px solid whitesmoke;
         border-top: 5px solid gray;
         animation: round 1.5s 0.2s infinite;
@@ -37,13 +40,15 @@
         pointer-events: none;
       }
     }
-
 body{
+    margin: 0;
+    overflow: hidden;
+    background-color: #22242a;
+}
+.body{
     display: grid;
     place-items: center;
-    margin: 0;
-    background-color: #22242a;
-    overflow: hidden;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -67,7 +72,7 @@ body{
 }
 .sun{
     background-color:yellow;
-    box-shadow:0 0 1.3em white;
+    box-shadow:0 0 1em white;
     width: 25%;
     max-width: 100px;
     max-height: 100px;
