@@ -14,7 +14,7 @@
         z-index: 10;
         border-radius: 50%;
        
-        width:clamp(1em, 4%, 2.5em );
+        width:1.5em;
         aspect-ratio: 1/1;
         border: 5px solid whitesmoke;
         border-top: 5px solid gray;
